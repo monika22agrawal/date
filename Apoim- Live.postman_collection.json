@@ -1,0 +1,1946 @@
+{
+	"info": {
+		"name": "Apoim- Live",
+		"_postman_id": "87d53316-deea-1a2d-5473-4a54b5fb1402",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contactNo",
+							"value": "9098191728",
+							"type": "text"
+						},
+						{
+							"key": "countryCode",
+							"value": "+91",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "devTest",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "manish.mindiii@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "22.7196",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "75.8577",
+							"type": "text"
+						},
+						{
+							"key": "deviceToken",
+							"value": "rys5s 56546ty5rty",
+							"type": "text"
+						},
+						{
+							"key": "deviceType",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "socialId",
+							"value": "106775539812958022900",
+							"type": "text"
+						},
+						{
+							"key": "socialType",
+							"value": "gmail",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "1994-04-22",
+							"type": "text"
+						},
+						{
+							"key": "purpose",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "dateWith",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "eventInvitation",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "indore",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/userRegistration"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jiya@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/userLogin"
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "f76f9e7199baac6e2ec7"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jitendra.mindiii@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/forgotPassword"
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "48f55730aa4914df399a"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "oldPassword",
+							"value": "c41f93de9d",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/changePassword"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserProfile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "357e8cf5dfdaf0806306"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "birthday",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "relationship",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "about",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "showOnMap",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "image[]",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "eduId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "workId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "interestId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/user/getUserProfile?userId=88",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"getUserProfile"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "88"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEducationList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/getEducationList"
+			},
+			"response": []
+		},
+		{
+			"name": "getWorkList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/getWorkList"
+			},
+			"response": []
+		},
+		{
+			"name": "getInterestList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/getInterestList"
+			},
+			"response": []
+		},
+		{
+			"name": "nearByUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "d55bd7ae17e2c9a23eea"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "latitude",
+							"value": "22.723791",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "75.886705",
+							"type": "text"
+						},
+						{
+							"key": "showMe",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ageStart",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ageEnd",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/nearByUsers"
+			},
+			"response": []
+		},
+		{
+			"name": "verifyNo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "countryCode",
+							"value": "+91",
+							"type": "text"
+						},
+						{
+							"key": "contactNo",
+							"value": "8839511859",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/verifyNo"
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "e9b90b4453bef811db78"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "birthday",
+							"value": "1999-02-14",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Sanjay singh",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "5.11",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "75",
+							"type": "text"
+						},
+						{
+							"key": "relationship",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "about",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "showOnMap",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "eduId",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "workId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "interestId",
+							"value": "Chess,bollyball",
+							"type": "text"
+						},
+						{
+							"key": "image[]",
+							"type": "file",
+							"value": ""
+						},
+						{
+							"key": "eventType",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "appointmentType",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/updateProfile"
+			},
+			"response": []
+		},
+		{
+			"name": "makeAppointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8af86b7531f3a318d0"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointForId",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "appointDate",
+							"value": "2018-02-27",
+							"type": "text"
+						},
+						{
+							"key": "appointTime",
+							"value": "4:20pm",
+							"type": "text"
+						},
+						{
+							"key": "appointAddress",
+							"value": "Bangali Square indore",
+							"type": "text"
+						},
+						{
+							"key": "appointLatitude",
+							"value": "22.708146",
+							"type": "text"
+						},
+						{
+							"key": "appointLongitude",
+							"value": "75.922958",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/makeAppointment"
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointmentList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8af86b7531f3a318d0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/appointment/getAppointment?offset=0&limit=10",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"appointment",
+						"getAppointment"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeAppointmentStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8af86b7531f3a318d0"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "appointeStatus",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/changeAppointmentStatus"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAppointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8af86b7531f3a318d0"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/deleteAppointment"
+			},
+			"response": []
+		},
+		{
+			"name": "finishAppointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8af86b7531f3a318d0"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointId",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/finishAppointment"
+			},
+			"response": []
+		},
+		{
+			"name": "MyFavorite",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "d5a6d9417388bb66ba76"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "favUserId",
+							"value": "137",
+							"type": "text"
+						},
+						{
+							"key": "isFavorite",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/myFavorite"
+			},
+			"response": []
+		},
+		{
+			"name": "getMyFavoriteList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "97be70a5e2592e3a0898"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/user/getMyFavorite?offset=0&limit=10",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"getMyFavorite"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "friendRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8cbf63ab6c2c58cd22"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "requestFor",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "edit",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/friendRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "unfriend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a8cbf63ab6c2c58cd22"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "friendId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/unfriend"
+			},
+			"response": []
+		},
+		{
+			"name": "checkSocialRegistration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "socialId",
+							"value": "43534534534534534",
+							"type": "text"
+						},
+						{
+							"key": "socialType",
+							"value": "facebook",
+							"type": "text"
+						},
+						{
+							"key": "deviceToken",
+							"value": "dfgvdsfgsdgfvdsg",
+							"type": "text"
+						},
+						{
+							"key": "deviceType",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/checkSocialRegistor"
+			},
+			"response": []
+		},
+		{
+			"name": "myLike",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "434c676c58d2ffbf2dfa"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "likeUserId",
+							"value": "113",
+							"type": "text"
+						},
+						{
+							"key": "isLike",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/myLike"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "34396a9d0a6269a7352c"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/user/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUserImage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "61bb0d9e5f543760236d"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userImgId",
+							"value": "191",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/deleteUserImage"
+			},
+			"response": []
+		},
+		{
+			"name": "getFriendList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "6cb764eb596a385e7ce8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/user/getFriendList?offset=0&limit=10&listType=receivedRequest",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"getFriendList"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "listType",
+							"value": "receivedRequest"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNotificationList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "70d3382373844e7647f7"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "birthday",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "relationship",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "about",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "showOnMap",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "image[]",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "eduId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "workId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "interestId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/user/getNotificationList?offset=0&limit=10",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"user",
+						"getNotificationList"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEvent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1f7b1ff98cd0529ff9dc"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventName",
+							"value": "Ofc Party",
+							"type": "text"
+						},
+						{
+							"key": "eventStartDate",
+							"value": "2018-04-22 12:00",
+							"type": "text"
+						},
+						{
+							"key": "eventEndDate",
+							"value": "2018-04-23 12:00",
+							"type": "text"
+						},
+						{
+							"key": "eventPlace",
+							"value": "sayaji",
+							"type": "text"
+						},
+						{
+							"key": "eventLatitude",
+							"value": "23.34534",
+							"type": "text"
+						},
+						{
+							"key": "eventLongitude",
+							"value": "23.54645",
+							"type": "text"
+						},
+						{
+							"key": "privacy",
+							"value": "1",
+							"description": "1 for Public, 2 for Private",
+							"type": "text"
+						},
+						{
+							"key": "payment",
+							"value": "1",
+							"description": "1 for Paid, 2 for Free",
+							"type": "text"
+						},
+						{
+							"key": "userLimit",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "eventUserType",
+							"value": "3",
+							"description": "1 for Male,2 for Female,3 for Both",
+							"type": "text"
+						},
+						{
+							"key": "inviteFriendId",
+							"value": "174,176",
+							"type": "text"
+						},
+						{
+							"key": "eventAmount",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "currencySymbol",
+							"value": "$",
+							"type": "text"
+						},
+						{
+							"key": "currencyCode",
+							"value": "USD",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/createEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "Event List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "64bb1be95a9018d4521e"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://apoim.com/service/event/getEventList?offset=0&limit=10&listType=myEvent",
+					"protocol": "https",
+					"host": [
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"event",
+						"getEventList"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0",
+							"equals": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"equals": true
+						},
+						{
+							"key": "listType",
+							"value": "myEvent",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEventDetail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "64bb1be95a9018d4521e"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/event/getEventDetail?eventId=10&detailType=eventRequest",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"event",
+						"getEventDetail"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "10"
+						},
+						{
+							"key": "detailType",
+							"value": "eventRequest"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEventMemberList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "64bb1be95a9018d4521e"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/event/getEventMemberList?offset=0&limit=10&memberType=invited&eventId=75",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"event",
+						"getEventMemberList"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "memberType",
+							"value": "invited"
+						},
+						{
+							"key": "eventId",
+							"value": "75"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "64bb1be95a9018d4521e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "memberType",
+							"value": "joined",
+							"description": "joined or invited",
+							"type": "text"
+						},
+						{
+							"key": "eventMemId",
+							"value": "98",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/removeMember"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEvent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "40b19dee36ffde2de240"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "18",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/deleteEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "joinMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "d4e88d45d7936f969485"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "memberId",
+							"value": "180",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/joinMember"
+			},
+			"response": []
+		},
+		{
+			"name": "eventPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "d4e88d45d7936f969485"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "memberId",
+							"value": "180",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/eventPayment"
+			},
+			"response": []
+		},
+		{
+			"name": "shareMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "be18ed0d2549ee99aeba"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "memberId",
+							"value": "172",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/shareMember"
+			},
+			"response": []
+		},
+		{
+			"name": "companionMemberStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "26bf7a6d50760e5dc29d"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1 for accept & 2 for reject",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/companionMemberStatus"
+			},
+			"response": []
+		},
+		{
+			"name": "companionPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "be18ed0d2549ee99aeba",
+						"description": "token whoe pay for companion partner"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "compId",
+							"value": "172",
+							"description": "companion Id",
+							"type": "text"
+						},
+						{
+							"key": "eventMemId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/companionPayment"
+			},
+			"response": []
+		},
+		{
+			"name": "updateEvent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "37d1e80fadd31fae8552"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventName",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "eventPlace",
+							"value": "indore",
+							"type": "text"
+						},
+						{
+							"key": "eventLatitude",
+							"value": "45.456456",
+							"type": "text"
+						},
+						{
+							"key": "eventLongitude",
+							"value": "46.456456",
+							"type": "text"
+						},
+						{
+							"key": "eventStartDate",
+							"value": "2018-05-22 12:00",
+							"type": "text"
+						},
+						{
+							"key": "eventEndDate",
+							"value": "2018-05-23 12:00",
+							"type": "text"
+						},
+						{
+							"key": "eventId",
+							"value": "19",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/updateEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "paymentForShowTopList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "26829e0c854f62c7b0c6"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/payment/paymentForShowTopList"
+			},
+			"response": []
+		},
+		{
+			"name": "viewOnMapPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "26829e0c854f62c7b0c6"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/payment/viewOnMapPayment"
+			},
+			"response": []
+		},
+		{
+			"name": "addBankAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "478ad7b9209982496e50"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "monika",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "agrawal",
+							"type": "text"
+						},
+						{
+							"key": "routingNumber",
+							"value": "061000227",
+							"type": "text"
+						},
+						{
+							"key": "accountNumber",
+							"value": "6756434565",
+							"type": "text"
+						},
+						{
+							"key": "postalCode",
+							"value": "34567",
+							"type": "text"
+						},
+						{
+							"key": "ssnLast",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1993-08-13",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/payment/addBankAccount"
+			},
+			"response": []
+		},
+		{
+			"name": "getBankAccDetail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "1a5e85ce91ac45b3755b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/event/getBankAccDetail"
+			},
+			"response": []
+		},
+		{
+			"name": "getContent",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "68e9fee99852d57c38aa"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "151",
+							"type": "text"
+						},
+						{
+							"key": "memberId",
+							"value": "181",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "monika",
+							"type": "text"
+						},
+						{
+							"key": "cardNumber",
+							"value": "4242424242424242",
+							"type": "text"
+						},
+						{
+							"key": "expiryMonth",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "expiryYear",
+							"value": "2021",
+							"type": "text"
+						},
+						{
+							"key": "cvc",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/getContent"
+			},
+			"response": []
+		},
+		{
+			"name": "notificationStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "49c2a1d57a1c0da7d081"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/notificationStatus"
+			},
+			"response": []
+		},
+		{
+			"name": "saveCallingUserId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "7bb766a1fbb10b9ece4d"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "quickBloxId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/saveCallingUserId"
+			},
+			"response": []
+		},
+		{
+			"name": "subsPaymentProcess",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "a52f870f3008a8482e5c"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/payment/subsPaymentProcess"
+			},
+			"response": []
+		},
+		{
+			"name": "cancelSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "0625d4c902b0e041a1ee"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/payment/cancelSubscription"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete event image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "397f07e6b4f9c6c5e8d8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventImageId",
+							"value": "34534",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/removeEventImage",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add event image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "397f07e6b4f9c6c5e8d8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "4345",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "eventImage",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/event/addEventImage",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Event invitation user list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "5e3f2e0185e3735ebf0c"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userGender",
+							"value": "1",
+							"description": "1: Male, 2: Female, 3: Transgender",
+							"type": "text"
+						},
+						{
+							"key": "privacy",
+							"value": "2",
+							"description": "1:Public, 2:Private, 3:Both",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "",
+							"description": "22.7052160427021",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "",
+							"description": "75.9091516797595",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://apoim.com/service/event/getInvitationUserList",
+				"description": ""
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6da24e07-5681-44de-a2b0-deecfb80cbb8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "869026c1-3069-48d1-b3ee-55c90cfb852a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

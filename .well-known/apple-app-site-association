@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "UMS434565C.com.ios.Appointment",
+                 "paths": [ "*" ]
+            }
+        ]
+    }
+}

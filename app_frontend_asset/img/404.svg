@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve" width="512px" height="512px" class=""><g><rect x="128" y="96" style="fill:#F6868E" width="240" height="216" data-original="#FFCB57" class="active-path" data-old_color="#F7949B"/><g>
+	<path style="fill:#3F3A34;" d="M456,496H40c-22.056,0-40-17.944-40-40v-40h144v16H16v24c0,13.232,10.768,24,24,24h416   c13.232,0,24-10.768,24-24v-24H352v-16h144v40C496,478.056,478.056,496,456,496z" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M312,464H184c-13.232,0-24-10.768-24-24v-24h176v24C336,453.232,325.232,464,312,464z M176,432v8   c0,4.408,3.584,8,8,8h128c4.416,0,8-3.592,8-8v-8H176z" data-original="#3F3A34" class=""/>
+	<rect x="48" y="448" style="fill:#3F3A34;" width="16" height="16" data-original="#3F3A34" class=""/>
+	<rect x="80" y="448" style="fill:#3F3A34;" width="16" height="16" data-original="#3F3A34" class=""/>
+	<rect x="112" y="448" style="fill:#3F3A34;" width="16" height="16" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M480,400h-16V120c0-13.232-10.768-24-24-24h-24V80h24c22.056,0,40,17.944,40,40V400z" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M32,400H16V120c0-22.056,17.944-40,40-40h24v16H56c-13.232,0-24,10.768-24,24V400z" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M448,400h-16V128h-16v-16h16c8.824,0,16,7.176,16,16V400z" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M64,400H48V128c0-8.824,7.176-16,16-16h16v16H64V400z" data-original="#3F3A34" class=""/>
+</g><g>
+	<path style="fill:#A51D29" d="M400,80H96V0h304V80z M112,64h272V16H112V64z" data-original="#E56565" class="" data-old_color="#a51d29"/>
+	<rect x="128" y="32" style="fill:#A51D29" width="16" height="16" data-original="#E56565" class="" data-old_color="#a51d29"/>
+	<rect x="160" y="32" style="fill:#A51D29" width="16" height="16" data-original="#E56565" class="" data-old_color="#a51d29"/>
+	<rect x="192" y="32" style="fill:#A51D29" width="16" height="16" data-original="#E56565" class="" data-old_color="#a51d29"/>
+</g><g>
+	<polygon style="fill:#3F3A34;" points="400,344 96,344 96,96 112,96 112,328 384,328 384,96 400,96  " data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M184,272h-16v-24h-40v-17.696L162.808,152H184v80h16v16h-16V272z M144.76,232H168v-52.304   L144.76,232z" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M352,272h-16v-24h-40v-17.696L330.808,152H352v80h16v16h-16V272z M312.76,232H336v-52.304   L312.76,232z" data-original="#3F3A34" class=""/>
+	<path style="fill:#3F3A34;" d="M248,264c-22.056,0-40-17.944-40-40v-32c0-22.056,17.944-40,40-40s40,17.944,40,40v32   C288,246.056,270.056,264,248,264z M248,168c-13.232,0-24,10.768-24,24v32c0,13.232,10.768,24,24,24s24-10.768,24-24v-32   C272,178.768,261.232,168,248,168z" data-original="#3F3A34" class=""/>
+</g></g> </svg>

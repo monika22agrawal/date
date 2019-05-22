@@ -1,0 +1,493 @@
+.boxed input[type="radio"] {
+    display: block;
+    opacity: 0;
+    position: absolute;
+}
+.rsnd-cde {
+    color: #a51d29;
+    font-weight: 700;
+}
+.rsnd-cde:hover, .rsnd-cde:focus{
+	color: #a51d29;
+}
+.showHide {
+  display: none;
+}
+.showDiv {
+	display: block;
+}
+.upload_pic_in_album input[type="file"] {
+    display: contents;
+}
+.error{
+	color:red !important;
+	padding-top:5px;
+}
+.form-group.regfld.lbl-pos label {
+    text-align: left;
+    display: block;
+}
+.loaderIcon {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    top: 0;
+    /*z-index: 9999;*/
+    z-index: 100000000000;
+    display: none;
+}
+.LoaderInner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.LoaderInner img{
+    position: relative;
+    left: 0;
+    right: 0;
+    max-width: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.map-sec{
+  min-height:700px;
+  width:100%;
+  overflow:visible;
+  position:relative;
+}
+.map-sec.map-sec-2{
+  min-height:400px;
+}
+.map_img1 {
+  float: left;
+  width: 24%;
+}
+.map_nme2 {
+  font-size: 18px;
+  color: #a51d29;
+}
+.map_add3 {
+  color: #333;
+}
+.infoCnt {
+  overflow: hidden;
+}
+.appIconmap {
+    /*position: absolute;*/
+    right: 0px;
+    margin-top: 5px;
+    float: right;
+}
+a.link-font {
+    color: #a51d29 !important;
+    display:block;
+    /*padding-left: 12px;*/
+}
+.notFound {
+    text-align: center;
+}
+.unlikeCls {
+  color: #fff;
+}
+.likeCls {
+  color: #a51d29;
+}
+.favoriteCls {
+  color: #fff;
+}
+.favoriteCls {
+  color: #a51d29;
+}
+/*--scroll--*/
+.profile_list.scroll-sec {
+  height: 350px;
+  padding: 0 10px;
+}
+.sticky{
+    position: sticky;
+    top: 75px !important;
+    background: #fff;
+    z-index: 2;
+}
+.radio-btns-apoim p{
+  margin: 0 0 0em;
+}
+.str-mrgn p{
+  margin:0 0 0em;
+}
+.image-active{
+  border:2px solid #a51d29;
+  border-radius: 5px
+}
+
+.show_loader{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.login_btn.btn-green:before {
+    background-color: #1b964e;
+}
+.login_btn.btn-green:hover {
+    color: #1b964e;
+}
+.login_btn.btn-green:after {
+  border: 1px solid #1b964e ;
+}
+
+.event_btn.btn-green:before {
+    background-color: #1b964e;
+}
+.event_btn.btn-green:after {
+    border: 1px solid #1b964e;
+}
+.event_btn.btn-green:hover {
+    color: #1b964e !important;
+}
+/*.modal {
+    
+    z-index: 9999 !important;
+    
+}*/
+.pac-container {
+    z-index: 99999 !important;
+}
+
+
+.apin-ads-mrkr {
+  color: #828282 !important;
+  line-height: 22px !important;
+  font-size: 15px !important;
+  min-height: 64px;
+}
+.apin-ads-mrkr.apin-ads-mrkr2{
+  padding: 0px 0px 0px 0px !important;
+  min-height: 55px !important;
+}
+.apin-ads-mrkr span {
+  padding-right: 9px;
+}
+
+.evnt-min{
+  min-height: 40px;
+}
+.map-adress-add{
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+span.statusOnOff {
+    position: absolute;
+    right: 30px;
+    bottom: 2px;
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    /*display: block;*/
+    display: none;
+}
+.statusOnOff .green-ofline, .statusOnOff .green-online {
+     position: static; 
+    height: 12px;
+    width: 12px;
+    margin: auto;
+    line-height: 38px;
+    margin-top: 5px;
+}
+/*--chat page--*/
+.media.cstm-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    float:left;
+}
+.media-body.cstm-media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width:auto;
+}
+.media-body.cstm-media-body h5{
+  color: #2e3c43;
+    font-size: 16px;
+    font-weight: 700;
+}
+.media-body.cstm-media-body p{
+  color:#a51d29;
+  font-size: 13px;
+}
+.ChatUsHead.cstm-chathed {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+}
+.chatOption.cstm-chat-optn {
+    float: right;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+.dropdown.mrgn-rgt2 {
+    margin-right: 15px;
+}
+.slimScrollDiv.cstm-scroll-div {
+  height: calc(100vh - 300px);
+}
+.chatUserList.cstm-chat-list {
+    background: #fff;
+    height: calc(100vh - 151px);
+}
+.regfld.cht-text textarea {
+    background: #fff;
+    min-height: auto !important;
+        padding: 0px 45px 0 10px;   
+}
+.emPicker{
+  width:100% !important;
+}
+.emojiPickerIconWrap {
+    display: block !important;
+    position:relative;
+}
+.emojiPickerIcon{
+    height: 40px !important;
+    width: 40px !important;
+    background-color: rgb(238, 238, 238);
+    margin: 4px;
+}
+.message_input_wrapper{
+   position:relative;
+}
+.emojiPickerIcon{position:absolute;top:0 !important;right:0 !important;cursor:pointer;}
+.img-cursor{
+  cursor:pointer;
+}
+.emojiPicker {
+    top: auto !important;
+    bottom: 82px;
+}
+.emojiPicker .shortcode {
+    display: none;
+}
+.clr-red {
+  color: #a51d29;
+}
+.cstm-media-heading{
+  color:#2e3c43;
+}
+p.evt-add {
+    height: 74px;
+}
+.scroll-prt-2 {
+    max-height: 411px;
+    overflow-y: auto;
+    width: 100%;
+}
+.speech-img {
+    color: #2e3c43;
+    display: inline-block;
+    position: relative;
+}
+.group-mmbr p{
+  font-size:15px !important;
+}
+/*.btn:focus, .btn.focus {
+    color: #fff;
+}*/
+.modal#myModal {
+    z-index: 9999 !important;
+}
+.grp-cht-msg {
+    font-size: 12px;
+    color: #a51d29;
+     font-weight: 700;
+     margin-bottom: -5px;
+}
+
+
+.note-txt{
+  color: #828282 !important;
+  font-size: 12px !important; 
+}
+
+.download_full_slider .download_moblie .download_m_slider .download_moblile_slider .owl-dots .owl-dot{
+  outline: 0;
+}
+.pr-0{
+  padding-right:0px;
+}
+.pl-0{
+  padding-left:0px;
+}
+.brdr-rads-none{
+  border-radius:0px;
+}
+.no-mmbr {
+    line-height: 48px;
+    color: #828282;
+}
+.fnt-wgt-700{
+  font-weight:700;
+  font-size:15px;
+}
+.color-grn{
+  color:#49ab3f;
+}
+.color-yllw{
+  color:#f9ba0a;
+}
+.color-rd{
+  color:#a51d29;
+}
+.crcle-veri.bck-rd{
+  background-color:#a51d29;
+}
+.crcle-veri.bck-yllw{
+  background-color:#f9ba0a;
+}
+.conty-cd .btn {
+    height: 46px !important;
+    background-color: #f4f4f4;
+}
+.conty-cd ul li a span {
+    font-size: 15px !important;
+}
+.conty-cd .btn.btn-default:focus, .conty-cd .btn.btn-default:hover, .conty-cd .btn.btn-default:active{
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+.conty-cd input{
+  border-radius:0px;
+  height:38px;
+}
+.r_members_inner .owl-stage{
+  margin: 0 auto;
+}
+
+
+.show-hide-chat.slimScrollDiv.cstm-scroll-div {
+    height: calc(100vh - 269px);
+}
+#block_messgaeevent_3 {
+    padding-bottom: 15px;
+}
+.pic-sde-txt a h2 {
+    color: #333;
+}
+
+.dsply-block a .nme-prson {
+    color: #333;
+}
+.psted-by-sec a::before{
+    display:none;
+}
+.psted-by-sec a.dsply-nne img{
+  margin-right:0px;
+}
+
+.mb-10{
+  margin-bottom:10px !important;
+}
+.cstm_lnguage .dropdown-menu {
+    min-width: 225px;
+    width: 100%;
+}
+.wdth_25 {
+    width: 25%;
+}
+.pic-sde-txt.name-len{
+  width: 70%;
+}
+.pic-sde-txt.name-len h2{
+      width: 100%;
+}
+
+
+.speech-img {
+    color: #2e3c43;
+    display: inline-block;
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.speech-img img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-object-fit: cover;
+    border-radius: 8px;
+}
+.grp-cht-msg {
+    display: inline-block;
+    width: 100%;
+}
+/*--3 may event revie name and date--*/
+.rev_evnt_nme {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 7px;
+    color:#333;
+}
+.rev_evnt_nme span {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color:#828282;
+}
+
+.camMemberList{
+  border-radius: 0 !important;
+  background: none !important;
+  width: 100%;
+  padding-right: 100px;
+}
+.camMemberList{
+  position: relative;
+}
+.userIn span {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.userIn span small{
+  font-size: 14px;
+}
+.userIn {
+    display: flex;
+}
+li.camMemberList .pay-btn {
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+.btn:focus{
+  color: #fff !important;
+}
+.joinedVisitCount.rem-mem, .invitedVisitCount.rem-mem {
+  position: relative;
+}
+.cancleReq.cross-mem-icn{
+      position: absolute;
+    right: 0px;
+    top: 18%;
+}
+.cancleReq.cross-mem-icn img{
+      max-width: 17px;
+}

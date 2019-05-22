@@ -1,0 +1,573 @@
+{
+	"info": {
+		"name": "Apoim Phase2",
+		"_postman_id": "45671da9-f540-13c9-7c47-41da33d9194a",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "verifyEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "monika.mindiii@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/verifyEmail"
+			},
+			"response": []
+		},
+		{
+			"name": "userRegistration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fullName",
+							"value": "Monika Agrawal",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "monika.mindiii@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "indore",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "22.7196",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "75.8577",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "1992-04-22",
+							"type": "text"
+						},
+						{
+							"key": "purpose",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "dateWith",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "eventInvitation",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "socialType",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "socialId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/userRegistration"
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "monika.mindiii@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/forgotPassword"
+			},
+			"response": []
+		},
+		{
+			"name": "userLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "monika.mindiii@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/userLogin"
+			},
+			"response": []
+		},
+		{
+			"name": "addBusiness",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "0fd1cf6bcbefb941d110"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "businessName",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "businessAddress",
+							"value": "indore",
+							"type": "text"
+						},
+						{
+							"key": "businesslat",
+							"value": "23.343342",
+							"type": "text"
+						},
+						{
+							"key": "businesslong",
+							"value": "23.345345",
+							"type": "text"
+						},
+						{
+							"key": "businessImage",
+							"value": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/business/addBusiness"
+			},
+			"response": []
+		},
+		{
+			"name": "cancelSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "ad234bb9cdf7e19dcee6"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/business/cancelSubscription"
+			},
+			"response": []
+		},
+		{
+			"name": "businessSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "ad234bb9cdf7e19dcee6"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "tok_1CtVpiKtTgsRzJjJ8GfsRXZD",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/business/businessSubscription"
+			},
+			"response": []
+		},
+		{
+			"name": "verifyNo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "ef5f0a5accca12ef8f3a"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "countryCode",
+							"value": "+91",
+							"type": "text"
+						},
+						{
+							"key": "contactNo",
+							"value": "9575643300",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/verifyNo"
+			},
+			"response": []
+		},
+		{
+			"name": "verifyIdWithHand",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "ef5f0a5accca12ef8f3a"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idWithHand",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/user/verifyIdWithHand"
+			},
+			"response": []
+		},
+		{
+			"name": "getBusinessDetail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "ec33f722d81de058f019"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/business/getBusinessDetail?userId=88",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"business",
+						"getBusinessDetail"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "88"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserVerificationStatus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "16ff493767d503b592f5"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://dev.apoim.com/service/user/getUserVerificationStatus"
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "b3e559848097b7b7ab4b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dev.apoim.com/service/appointment/getAppointment?offset=0&limit=10&listType=received",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"apoim",
+						"com"
+					],
+					"path": [
+						"service",
+						"appointment",
+						"getAppointment"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "listType",
+							"value": "received"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "makeAppointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "862652f971ee9ed4475d"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointForId",
+							"value": "94",
+							"type": "text"
+						},
+						{
+							"key": "appointDate",
+							"value": "2018-09-27",
+							"type": "text"
+						},
+						{
+							"key": "appointTime",
+							"value": "4:20pm",
+							"type": "text"
+						},
+						{
+							"key": "appointAddress",
+							"value": "Bangali Square indore",
+							"type": "text"
+						},
+						{
+							"key": "appointLatitude",
+							"value": "22.708146",
+							"type": "text"
+						},
+						{
+							"key": "appointLongitude",
+							"value": "75.922958",
+							"type": "text"
+						},
+						{
+							"key": "offerPrice",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "offerType",
+							"value": "1",
+							"description": "1:Paid,2:Free",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/makeAppointment"
+			},
+			"response": []
+		},
+		{
+			"name": "applyCounter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "b3e559848097b7b7ab4b"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointId",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "counterPrice",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "appointById",
+							"value": "93",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/applyCounter"
+			},
+			"response": []
+		},
+		{
+			"name": "updateCounter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "862652f971ee9ed4475d"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appointId",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "appointForId",
+							"value": "94",
+							"type": "text"
+						},
+						{
+							"key": "counterStatus",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/updateCounter"
+			},
+			"response": []
+		},
+		{
+			"name": "giveReview",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "b3e559848097b7b7ab4b"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "nice meeting",
+							"type": "text"
+						},
+						{
+							"key": "receiverId",
+							"value": "93",
+							"type": "text"
+						},
+						{
+							"key": "referenceId",
+							"value": "14",
+							"description": "appId or eventId",
+							"type": "text"
+						},
+						{
+							"key": "reviewType",
+							"value": "1",
+							"description": "1 for Appointment and 2 for Event",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://dev.apoim.com/service/appointment/giveReview"
+			},
+			"response": []
+		}
+	]
+}
